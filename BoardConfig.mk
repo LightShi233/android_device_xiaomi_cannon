@@ -160,5 +160,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # WiFi
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/cannon/BoardConfigVendor.mk
