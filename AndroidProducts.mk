@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cannon.mk
+    $(LOCAL_DIR)/arrow_cannon.mk
 
 COMMON_LUNCH_CHOICES := \
     arrow_cannon-user \
