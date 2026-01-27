@@ -162,5 +162,8 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
+SELINUX_DUMP_POLICY := true
+
+
 # Inherit the proprietary files
 include vendor/xiaomi/cannon/BoardConfigVendor.mk
