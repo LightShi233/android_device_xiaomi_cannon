@@ -9,7 +9,7 @@ allow mtk_hal_camera camera_persist_file:dir rw_dir_perms;
 allow mtk_hal_camera camera_persist_file:file create_file_perms;
 
 # Allow mtk_hal_camera to access camera data files
-allow mtk_hal_camera camera_vendor_data_file:dir create_dir_perms;
-allow mtk_hal_camera camera_vendor_data_file:file create_file_perms;
+allow mtk_hal_camera vendor_camera_data_file:dir create_dir_perms;
+allow mtk_hal_camera vendor_camera_data_file:file create_file_perms;
 
 get_prop(mtk_hal_camera, vendor_mtk_pq_ro_prop)
