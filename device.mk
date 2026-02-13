@@ -488,6 +488,22 @@ PRODUCT_PACKAGES += \
     WifiResOverlay \
     TetheringResOverlay
 
+# IORAP
+PRODUCT_SYSTEM_PROPERTIES += \
+    iorapd.enabled=true \
+    iorapd.perfetto.enable=false \
+    iorapd.readahead.enable=true \
+    iorapd.max_db_size.mb=80
+
+# DEX optimization
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
+PRODUCT_SYSTEM_PROPERTIES += \
+    pm.dexopt.bg-dexopt=speed-profile \
+    pm.dexopt.install=speed-profile \
+    pm.dexopt.first-boot=quicken \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.image-dex2oat-threads=4
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
