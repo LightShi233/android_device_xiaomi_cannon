@@ -160,12 +160,5 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # WiFi
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
-# Add ART optimization
-WITH_DEXPREOPT := true
-DONT_DEXPREOPT_PREBUILTS := true
-
-# Speed-profile
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
-
 # Inherit the proprietary files
 include vendor/xiaomi/cannon/BoardConfigVendor.mk
